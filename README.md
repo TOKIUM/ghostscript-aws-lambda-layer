@@ -11,7 +11,7 @@ The layer called `ghostscript-aws-lambda-layer` will be published with [Serverle
 
 ```sh
 npm install
-npm publish
+npm run release
 ```
 
 ## Usage

@@ -10,7 +10,7 @@
   "scripts": {
     "prebuild": "rimraf -r build && mkdir -p build/bin",
     "build": "docker build -t ghostscript-layer . && CID=$(docker create ghostscript-layer:latest) && docker cp ${CID}:/usr/local/bin/gs build/bin/gs",
-    "prerelease": "build",
+    "prerelease": "npm run build",
     "release": "sls deploy"
   },
   "devDependencies": {
