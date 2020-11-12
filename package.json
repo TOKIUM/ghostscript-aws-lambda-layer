@@ -3,6 +3,9 @@
   "license": "AGPL-3.0",
   "name": "ghostscript-aws-lambda-layer",
   "version": "1.0.0",
+  "engines": {
+    "npm": ">= 7.0.0"
+  },
   "description": "Lambda layer to provide Ghostscript",
   "scripts": {
     "prebuild": "rimraf -r build && mkdir -p build/bin",
@@ -12,6 +15,6 @@
   },
   "devDependencies": {
     "rimraf": "^3.0.2",
-    "serverless": "^1.65.0"
+    "serverless": "^2.11.1"
   }
 }
