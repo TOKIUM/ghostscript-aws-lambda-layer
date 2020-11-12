@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "license": "AGPL-3.0",
+  "name": "ghostscript-aws-lambda-layer",
+  "version": "1.0.0",
+  "description": "Lambda layer to provide Ghostscript",
+  "scripts": {
+    "prebuild": "rimraf -r build && mkdir -p build/bin",
+    "build": "docker build -t ghostscript-layer . && CID=$(docker create ghostscript-layer:latest) && docker cp ${CID}:/usr/local/bin/gs build/bin/gs",
+    "prerelease": "build",
+    "release": "sls deploy"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "serverless": "^1.65.0"
+  }
+}

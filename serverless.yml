@@ -1,0 +1,12 @@
+service: ghostscript
+
+provider:
+  name: aws
+  region: ${opt:region, 'ap-northeast-1'}
+  stage: ${opt:stage, 'prod'}
+
+layers:
+  ghostscript-aws-lambda-layer:
+    path: build
+    name: ghostscript-aws-lambda-layer
+    description: Ghostscript v9.50 (/opt/bin/gs)
