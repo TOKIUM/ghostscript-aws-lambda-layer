@@ -1,7 +1,7 @@
 FROM lambci/lambda-base-2:build
 
-ENV GS_TAG=gs950
-ENV GS_VERSION=9.50
+ENV GS_TAG=gs9533
+ENV GS_VERSION=9.53.3
 ENV SRC_DIR=/usr/local/src/ghostscript
 
 RUN yum install -y wget

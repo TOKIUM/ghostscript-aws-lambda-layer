@@ -9,4 +9,4 @@ layers:
   ghostscript-aws-lambda-layer:
     path: build
     name: ghostscript-aws-lambda-layer
-    description: Ghostscript v9.50 (/opt/bin/gs)
+    description: Ghostscript v9.53.3 (/opt/bin/gs)
