@@ -1,4 +1,4 @@
-service: ghostscript
+service: ghostscript-service
 
 provider:
   name: aws
