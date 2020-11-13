@@ -6,10 +6,10 @@
   "engines": {
     "npm": ">= 7.0.0"
   },
-  "description": "Lambda layer to provide Ghostscript",
+  "description": "AWS Lambda layer to provide Ghostscript",
   "scripts": {
     "prebuild": "rimraf -r build && mkdir -p build/bin",
-    "build": "docker build -t ghostscript-layer . && CID=$(docker create ghostscript-layer:latest) && docker cp ${CID}:/usr/local/bin/gs build/bin/gs",
+    "build": "docker build -t ghostscript-aws-lambda-layer . && CID=$(docker create ghostscript-aws-lambda-layer:latest) && docker cp ${CID}:/usr/local/bin/gs build/bin/gs",
     "prerelease": "npm run build",
     "release": "sls deploy"
   },
