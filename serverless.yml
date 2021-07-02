@@ -9,6 +9,6 @@ layers:
   ghostscript-aws-lambda-layer:
     path: build
     name: ghostscript-aws-lambda-layer
-    description: Ghostscript v9.53.3 (/opt/bin/gs)
+    description: Ghostscript v9.54.0 (/opt/bin/gs)
     licenseInfo: AGPL-3.0
     retain: true
