@@ -15,6 +15,6 @@
   },
   "devDependencies": {
     "rimraf": "^3.0.2",
-    "serverless": "^2.48.0"
+    "serverless": "^3.27.0"
   }
 }
